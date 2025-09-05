@@ -117,6 +117,6 @@ To reproduce the analysis and model training, run the Jupyter notebooks in order
 
 To classify a new email, run the interactive script from the command line:
 
-python src/predict_spam.py
+/predict_spam.py
 
 Paste your email text into the terminal, type ENDEMAIL on a new line, and press Enter to see the prediction.
