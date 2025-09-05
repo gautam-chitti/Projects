@@ -95,10 +95,15 @@ The final model, **XGBoost (Raw)**, was saved for its high accuracy and precisio
 
 First, clone the repository and install the required dependencies:
 
-git clone \<repository-url\>  
+```
+git clone --no-checkout https://github.com/gautam-chitti/Projects.git
+cd Projects
+git sparse-checkout init --cone
+git sparse-checkout set CapstoneProjectGautamS
+git checkout
 cd spam-classifier  
 pip install \-r requirements.txt
-
+```
 ### **2\. Run the Notebooks (Optional)**
 
 To reproduce the analysis and model training, run the Jupyter notebooks in order:
