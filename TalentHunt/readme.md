@@ -69,8 +69,14 @@ The application uses a single table named candidates within the candidates.db SQ
 1. **Clone the Repository:**
 
 ```bash
-   git clone https://github.com/gautam-chitti/TalentHunt
-   cd talent-scout-chatbot
+git clone --no-checkout https://github.com/gautam-chitti/Projects.git
+cd Projects
+git sparse-checkout init --cone
+git sparse-checkout set TalentHunt
+git checkout
+
+cd TalentHunt 
+pip install \-r requirements.txt
 ```
 
 2. **Create and Activate a Virtual Environment:**

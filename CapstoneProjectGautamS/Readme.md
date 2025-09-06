@@ -95,10 +95,16 @@ The final model, **XGBoost (Raw)**, was saved for its high accuracy and precisio
 
 First, clone the repository and install the required dependencies:
 
-git clone \<repository-url\>  
-cd spam-classifier  
-pip install \-r requirements.txt
+``` Bash
+git clone --no-checkout https://github.com/gautam-chitti/Projects.git
+cd Projects
+git sparse-checkout init --cone
+git sparse-checkout set CapstoneProjectGautamS
+git checkout
 
+cd CapstoneProjectGautamS 
+pip install \-r requirements.txt
+```
 ### **2\. Run the Notebooks (Optional)**
 
 To reproduce the analysis and model training, run the Jupyter notebooks in order:
@@ -111,6 +117,6 @@ To reproduce the analysis and model training, run the Jupyter notebooks in order
 
 To classify a new email, run the interactive script from the command line:
 
-python src/predict_spam.py
+/predict_spam.py
 
 Paste your email text into the terminal, type ENDEMAIL on a new line, and press Enter to see the prediction.
